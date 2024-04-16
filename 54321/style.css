@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+:root{
+    --cor-de-fundo: color #43a148;
+    --fundo-senha: #faf0f0;
+    --fundo-texto: #001E40;
+    --borda: #0075FF;
+    --fonte:"Bebas Neue", sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+    --botao-inativo:var(--borda);
+    --branco: black;
+    --botao-ativo: rgb(255, 255, 255);
+    --verde: rgb(255, 1, 1); 
+
+}
+
+
+body{
+color: rgb(0, 0, 0);
+background-color: rgb(102, 97, 179);
+font-family: var(--roboto);
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.titulo-principal{
+    font-family: var(--fonte);
+    font-size: 32px;
+}
+
+.titulo-principal span {
+color: #f0540b;
+}
+
+.botoes{
+font-family: var(--fonte);
+color: #f00b0b;
+}
+.ativo{
+    background-color: var(--botao-ativo);
+border-bottom: 4px solid var(--verde);
+}
+
+.botao{
+    font-family: "Crakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-top: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
+
+.contador{
+    font-size: 20px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+.aba-conteudo.ativo{
+    display: block;
+}
+.aba-conteudo{
+    display: none;
+    border-radius:0 0 40px 40px ;
+    padding: 40px;
+}
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+.aba.texto{
+background-color: green;
+padding: 40px;
+border-radius: 0 0 40px 40px;
+
+}
+
